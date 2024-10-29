@@ -1,0 +1,46 @@
+<HTML>
+
+<head>
+   <script type="text/javascript"> (function () {
+         var co = document.createElement("script");
+         co.type = "text/javascript"; co.async = true; co.src = "https://preprod.xola.com/checkout.js";
+         var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(co, s);
+      })(); 
+   </script>
+   <script>
+      window.onCheckoutButtonClick = function () {
+         var data = "671e4637685767a36f09cbdd";
+         window.xola.checkout(data);
+      }
+   </script>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Google tag (gtag.js) -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-SPLQ406MVY"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-SPLQ406MVY', { debug_mode: true });
+   </script>
+</head>
+<style>
+   .button {
+     background-color: #04AA6D; /* Green */
+     border: none;
+     color: white;
+     padding: 15px 32px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin: 4px 2px;
+     cursor: pointer;
+   }
+   </style>
+<body>
+   <button class="btn btn-primary trip-book-btn ng-scope button" onclick="onCheckoutButtonClick()">
+      Book Now
+   </button>
+</body>
+
+</HTML>
